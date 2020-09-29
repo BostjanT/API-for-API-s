@@ -6,6 +6,9 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+h1 {
+  text-align: center;
+}
 
 .my-apis {
   display: flex;
@@ -18,10 +21,12 @@ body {
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
-  grid-template-rows: 1rem 200px 1rem 1em;
+  grid-template-rows: 3rem 1rem 4rem 3rem;
   grid-gap: 0.6rem;
-  border: solid black 2px;
+  border: solid black 1px;
+  border-radius: 8px;
   background-color: coral;
+  box-shadow: 2px 4px 10px black;
 }
 
 .api-name {
@@ -38,9 +43,13 @@ body {
   cursor: pointer;
 }
 
+.api-name a:hover {
+  color: black;
+}
+
 .api-description {
   grid-column: span 3;
-  grid-row: 2;
+  grid-row: 3;
   align-self: center;
   justify-self: center;
   font-size: 1.4rem;
@@ -50,11 +59,11 @@ body {
 
 .api-auth {
   grid-column: 1 / span 1;
-  grid-row: 3;
+  grid-row: 4;
   justify-self: left;
 }
 .api-https {
   grid-column: 3 / span 1;
-  grid-row: 3;
+  grid-row: 4;
   justify-self: center;
 }
