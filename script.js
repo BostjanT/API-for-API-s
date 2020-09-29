@@ -47,6 +47,7 @@ function displayAPIs(myAPIs) {
   console.log(myAPIs.entries[0]);
   myAPIs = myAPIs.entries;
   document.body.innerHTML = `
+    <h1>LIST OF API's OUT THERE</h1>
     <div class="my-apis">
       ${myAPIs.map(getAPIhtml).join("")}
     </div>
